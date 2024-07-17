@@ -9,7 +9,7 @@ class BookController extends Controller
 {
     public function index(Request $request)
     {
-        // Mengambil query string dari URL
+        $perPage = $request->query('per_page', 5); // Jumlah item per halaman
         $title = $request->query('title');
         $isbn = $request->query('isbn');
 
@@ -24,12 +24,12 @@ class BookController extends Controller
             $query->where('isbn', $isbn);
         }
 
-        // Mengambil hasil data buku setelah filtering
-        $data = $query->get();
+        //ambil data 
+        $data = $query->paginate($perPage);
 
         return response()->json([
             'status' => true,
-            'message' => 'Successfully parsing data Books',
+            'message' => 'Successfully fetching books with pagination',
             'data' => $data
         ]);
     }
