@@ -40,9 +40,9 @@
                     <td>{{ $cs->name }}</td> 
                     <td>{{ $cs->teacher->name }}</td>
                     <td>
-                        <a href="classes/{{$cs->id}}">Detail</a>
-                        <a href="classes-edit/{{$cs->id }}">Edit</a>
-                        <a href="classes-delete/{{$cs->id }}">delete</a>
+                        <a href="classes/{{$cs->id}}" class="btn btn-primary">Detail</a>
+                        <a href="classes-edit/{{$cs->id }}" class="btn btn-info">Edit</a>
+                        <a href="classes-delete/{{$cs->id }}" class="btn btn-warning">delete</a>
                     </td>
                     {{-- <td>
                         @foreach ($cs->student as $st)

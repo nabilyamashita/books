@@ -49,9 +49,9 @@
                     <td>{{ $data->nis }}</td>
                     <td>{{ $data->class->name }}</td>
                     <td>
-                        <a href="students/{{$data->id }}">Detail</a>
-                        <a href="students-edit/{{$data->id }}">Edit</a>
-                        <a href="students-delete/{{$data->id }}">Delete</a>
+                        <a href="students/{{$data->id }}" class="btn btn-primary">Detail</a>
+                        <a href="students-edit/{{$data->id }}" class="btn btn-info">Edit</a>
+                        <a href="students-delete/{{$data->id }}" class="btn btn-warning">Delete</a>
                     </td>
                 </tr>                
             @endforeach

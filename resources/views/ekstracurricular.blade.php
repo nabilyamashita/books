@@ -40,9 +40,9 @@
                 <td>{{ $loop->iteration }}</td>
                 <td>{{ $sk->name }}</td>
                 <td>
-                    <a href="ekstracurricular/{{$sk->id}}">Detail</a>
-                    <a href="ekstracurricular-edit/{{$sk->id }}">Edit</a>
-                    <a href="ekstracurricular-delete/{{$sk->id }}">Delete</a>
+                    <a href="ekstracurricular/{{$sk->id}}" class="btn btn-primary">Detail</a>
+                    <a href="ekstracurricular-edit/{{$sk->id }}" class="btn btn-info">Edit</a>
+                    <a href="ekstracurricular-delete/{{$sk->id }}" class="btn btn-warning">Delete</a>
                 </td>
               </tr>
            @endforeach

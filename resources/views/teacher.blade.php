@@ -38,9 +38,9 @@
                     <td>{{ $loop->iteration }}</td>  
                     <td>{{ $tl->name }}</td> 
                     <td>
-                        <a href="teacher/{{ $tl->id }}">Detail</a>
-                        <a href="teacher-edit/{{$tl->id }}">Edit</a>
-                        <a href="teacher-delete/{{$tl->id }}">delete</a>
+                        <a href="teacher/{{ $tl->id }}" class="btn btn-primary">Detail</a>
+                        <a href="teacher-edit/{{$tl->id }}" class="btn btn-info">Edit</a>
+                        <a href="teacher-delete/{{$tl->id }}" class="btn btn-warning">delete</a>
                     </td> 
                 </tr>                
             @endforeach
